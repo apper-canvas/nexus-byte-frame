@@ -11,9 +11,8 @@ import { useDiscussions } from "@/hooks/useDiscussions";
 const CommunityDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { community, loading: communityLoading, error: communityError, joinCommunity, leaveCommunity } = useCommunity(id);
-  const { discussions, loading: discussionsLoading, error: discussionsError, loadDiscussions } = useDiscussions(id);
-
+const { community, loading: communityLoading, error: communityError, joinCommunity, leaveCommunity } = useCommunity(id);
+  const { discussions, loading: discussionsLoading, error: discussionsError, loadDiscussions, createPost } = useDiscussions(id);
   if (communityLoading) {
     return (
       <div className="min-h-screen bg-background">
@@ -70,12 +69,13 @@ const CommunityDetail = () => {
           onBack={handleBack}
         />
 
-        {/* Discussion Feed */}
+{/* Discussion Feed */}
         <DiscussionFeed
           discussions={discussions}
           loading={discussionsLoading}
           error={discussionsError}
           onDiscussionClick={handleDiscussionClick}
+          onCreatePost={createPost}
           onRetry={loadDiscussions}
         />
       </div>

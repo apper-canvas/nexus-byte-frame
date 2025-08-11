@@ -21,6 +21,23 @@ export const useDiscussions = (communityId) => {
     } finally {
       setLoading(false);
     }
+};
+
+  const createPost = async (postData) => {
+    try {
+      setLoading(true);
+      setError(null);
+      const newPost = await discussionService.create(postData);
+      // Add the new post to the beginning of the discussions array
+      setDiscussions(prevDiscussions => [newPost, ...prevDiscussions]);
+      return newPost;
+    } catch (err) {
+      setError(err.message);
+      toast.error("Failed to create post");
+      throw err;
+    } finally {
+      setLoading(false);
+    }
   };
 
   useEffect(() => {
@@ -31,7 +48,8 @@ export const useDiscussions = (communityId) => {
     discussions,
     loading,
     error,
-    loadDiscussions
+    loadDiscussions,
+    createPost
   };
 };
 
