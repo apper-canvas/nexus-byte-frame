@@ -1,0 +1,122 @@
+[
+  {
+    "Id": 1,
+    "name": "React Developers",
+    "description": "A community for React developers to share tips, discuss best practices, and showcase their projects. Perfect for both beginners and experts.",
+    "memberCount": 45621,
+    "category": "Professional",
+    "imageUrl": "/images/react-community.jpg",
+    "isJoined": false,
+    "createdAt": "2023-01-15T10:30:00Z"
+  },
+  {
+    "Id": 2,
+    "name": "Urban Photography",
+    "description": "Capture the essence of city life through your lens. Share your urban photography, get feedback, and discover amazing street photography techniques.",
+    "memberCount": 28934,
+    "category": "Hobbies",
+    "imageUrl": "/images/photography-community.jpg",
+    "isJoined": true,
+    "createdAt": "2023-02-20T14:45:00Z"
+  },
+  {
+    "Id": 3,
+    "name": "Gaming Legends",
+    "description": "The ultimate destination for gamers! Discuss the latest releases, share gameplay clips, find teammates, and participate in community tournaments.",
+    "memberCount": 67812,
+    "category": "Gaming",
+    "imageUrl": "/images/gaming-community.jpg",
+    "isJoined": false,
+    "createdAt": "2022-11-08T16:20:00Z"
+  },
+  {
+    "Id": 4,
+    "name": "San Francisco Tech",
+    "description": "Connect with tech professionals in the San Francisco Bay Area. Network, find job opportunities, and stay updated on local tech events.",
+    "memberCount": 12456,
+    "category": "Local",
+    "imageUrl": "/images/sf-tech-community.jpg",
+    "isJoined": true,
+    "createdAt": "2023-03-10T09:15:00Z"
+  },
+  {
+    "Id": 5,
+    "name": "Plant Parents",
+    "description": "Green thumbs unite! Share your plant care tips, troubleshoot plant problems, and show off your beautiful indoor gardens.",
+    "memberCount": 34789,
+    "category": "Hobbies",
+    "imageUrl": "/images/plants-community.jpg",
+    "isJoined": false,
+    "createdAt": "2023-01-25T11:00:00Z"
+  },
+  {
+    "Id": 6,
+    "name": "Startup Founders",
+    "description": "A supportive community for entrepreneurs and startup founders. Share experiences, get advice, and connect with potential co-founders.",
+    "memberCount": 19567,
+    "category": "Professional",
+    "imageUrl": "/images/startup-community.jpg",
+    "isJoined": true,
+    "createdAt": "2023-02-05T13:30:00Z"
+  },
+  {
+    "Id": 7,
+    "name": "Coffee Enthusiasts",
+    "description": "For those who take their coffee seriously. Discuss brewing methods, review coffee shops, and share your perfect cup recipes.",
+    "memberCount": 41203,
+    "category": "Hobbies",
+    "imageUrl": "/images/coffee-community.jpg",
+    "isJoined": false,
+    "createdAt": "2022-12-12T08:45:00Z"
+  },
+  {
+    "Id": 8,
+    "name": "Indie Game Developers",
+    "description": "Independent game developers sharing their journey, getting feedback on their games, and collaborating on exciting projects.",
+    "memberCount": 15832,
+    "category": "Gaming",
+    "imageUrl": "/images/indie-dev-community.jpg",
+    "isJoined": false,
+    "createdAt": "2023-03-01T15:20:00Z"
+  },
+  {
+    "Id": 9,
+    "name": "NYC Food Scene",
+    "description": "Discover the best eats in New York City! Share restaurant recommendations, food photos, and hidden culinary gems.",
+    "memberCount": 23674,
+    "category": "Local",
+    "imageUrl": "/images/nyc-food-community.jpg",
+    "isJoined": true,
+    "createdAt": "2023-01-08T12:10:00Z"
+  },
+  {
+    "Id": 10,
+    "name": "Digital Marketing Pro",
+    "description": "Stay ahead in digital marketing. Discuss the latest trends, share campaign results, and learn from marketing professionals worldwide.",
+    "memberCount": 38291,
+    "category": "Professional",
+    "imageUrl": "/images/marketing-community.jpg",
+    "isJoined": false,
+    "createdAt": "2023-02-14T10:55:00Z"
+  },
+  {
+    "Id": 11,
+    "name": "Book Club Readers",
+    "description": "A passionate community of book lovers. Join monthly reading challenges, discuss your favorite novels, and discover new authors.",
+    "memberCount": 26458,
+    "category": "Hobbies",
+    "imageUrl": "/images/book-community.jpg",
+    "isJoined": false,
+    "createdAt": "2023-01-30T14:25:00Z"
+  },
+  {
+    "Id": 12,
+    "name": "Austin Music Lovers",
+    "description": "Connect with Austin's vibrant music community. Discover local bands, share concert experiences, and find your next favorite artist.",
+    "memberCount": 18743,
+    "category": "Local",
+    "imageUrl": "/images/austin-music-community.jpg",
+    "isJoined": false,
+    "createdAt": "2023-02-28T16:40:00Z"
+  }
+]

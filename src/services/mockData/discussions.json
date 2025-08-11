@@ -1,0 +1,119 @@
+[
+  {
+    "Id": 1,
+    "communityId": "1",
+    "title": "Best practices for React hooks in 2024",
+    "author": "ReactMaster",
+    "timestamp": "2024-01-15T10:30:00Z",
+    "commentCount": 24,
+    "upvoteCount": 156
+  },
+  {
+    "Id": 2,
+    "communityId": "1",
+    "title": "How to optimize React performance for large applications",
+    "author": "DevExpert",
+    "timestamp": "2024-01-14T15:45:00Z",
+    "commentCount": 18,
+    "upvoteCount": 89
+  },
+  {
+    "Id": 3,
+    "communityId": "1",
+    "title": "State management: Redux vs Zustand vs Context API",
+    "author": "StateManager",
+    "timestamp": "2024-01-13T09:20:00Z",
+    "commentCount": 32,
+    "upvoteCount": 203
+  },
+  {
+    "Id": 4,
+    "communityId": "2",
+    "title": "Golden hour photography tips for urban landscapes",
+    "author": "StreetShooter",
+    "timestamp": "2024-01-15T08:15:00Z",
+    "commentCount": 15,
+    "upvoteCount": 67
+  },
+  {
+    "Id": 5,
+    "communityId": "2",
+    "title": "My favorite spots for night photography in downtown",
+    "author": "NightCrawler",
+    "timestamp": "2024-01-14T22:30:00Z",
+    "commentCount": 21,
+    "upvoteCount": 94
+  },
+  {
+    "Id": 6,
+    "communityId": "3",
+    "title": "Thoughts on the new Baldur's Gate 3 update?",
+    "author": "RPGFan",
+    "timestamp": "2024-01-15T16:45:00Z",
+    "commentCount": 45,
+    "upvoteCount": 178
+  },
+  {
+    "Id": 7,
+    "communityId": "3",
+    "title": "Looking for teammates for Valorant ranked games",
+    "author": "CompetitiveGamer",
+    "timestamp": "2024-01-15T14:20:00Z",
+    "commentCount": 12,
+    "upvoteCount": 23
+  },
+  {
+    "Id": 8,
+    "communityId": "4",
+    "title": "Upcoming tech meetups in San Francisco - January 2024",
+    "author": "EventOrganizer",
+    "timestamp": "2024-01-15T12:00:00Z",
+    "commentCount": 8,
+    "upvoteCount": 34
+  },
+  {
+    "Id": 9,
+    "communityId": "4",
+    "title": "Best co-working spaces in SOMA district?",
+    "author": "RemoteWorker",
+    "timestamp": "2024-01-14T11:30:00Z",
+    "commentCount": 16,
+    "upvoteCount": 42
+  },
+  {
+    "Id": 10,
+    "communityId": "5",
+    "title": "Help! My monstera leaves are turning yellow",
+    "author": "PlantParent123",
+    "timestamp": "2024-01-15T13:15:00Z",
+    "commentCount": 19,
+    "upvoteCount": 28
+  },
+  {
+    "Id": 11,
+    "communityId": "5",
+    "title": "Check out my propagation station setup!",
+    "author": "GreenThumb",
+    "timestamp": "2024-01-14T17:45:00Z",
+    "commentCount": 23,
+    "upvoteCount": 76
+  },
+  {
+    "Id": 12,
+    "communityId": "6",
+    "title": "How to pitch to VCs: lessons from 50+ meetings",
+    "author": "StartupCEO",
+    "timestamp": "2024-01-15T09:30:00Z",
+    "commentCount": 31,
+    "upvoteCount": 142
+  },
+  {
+    "Id": 13,
+    "communityId": "6",
+    "title": "Finding the right co-founder: red flags to avoid",
+    "author": "SerialFounder",
+    "timestamp": "2024-01-14T14:20:00Z",
+    "commentCount": 27,
+    "upvoteCount": 98
+  }
+]

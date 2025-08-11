@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1,
+    "name": "Professional",
+    "subcategories": ["Tech", "Marketing", "Design", "Business", "Finance", "Consulting"],
+    "isExpanded": false,
+    "isSelected": false
+  },
+  {
+    "Id": 2,
+    "name": "Hobbies",
+    "subcategories": ["Photography", "Cooking", "Reading", "Art", "Music", "Crafts"],
+    "isExpanded": false,
+    "isSelected": false
+  },
+  {
+    "Id": 3,
+    "name": "Gaming",
+    "subcategories": ["PC Gaming", "Console Gaming", "Mobile Gaming", "Indie Games", "Esports", "Game Development"],
+    "isExpanded": false,
+    "isSelected": false
+  },
+  {
+    "Id": 4,
+    "name": "Local",
+    "subcategories": ["San Francisco", "New York", "Los Angeles", "Austin", "Seattle", "Chicago"],
+    "isExpanded": false,
+    "isSelected": false
+  },
+  {
+    "Id": 5,
+    "name": "Lifestyle",
+    "subcategories": ["Fitness", "Travel", "Food", "Fashion", "Health", "Wellness"],
+    "isExpanded": false,
+    "isSelected": false
+  },
+  {
+    "Id": 6,
+    "name": "Learning",
+    "subcategories": ["Programming", "Languages", "Science", "History", "Philosophy", "Skills"],
+    "isExpanded": false,
+    "isSelected": false
+  }
+]
