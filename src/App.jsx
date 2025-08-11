@@ -4,6 +4,7 @@ import { ToastContainer } from "react-toastify";
 import Header from "@/components/organisms/Header";
 import Communities from "@/components/pages/Communities";
 import CommunityDetail from "@/components/pages/CommunityDetail";
+import PostDetail from "@/components/pages/PostDetail";
 import MyFeed from "@/components/pages/MyFeed";
 import Trending from "@/components/pages/Trending";
 
@@ -22,9 +23,10 @@ function App() {
           onSearchChange={handleSearchChange}
         />
         
-        <Routes>
+<Routes>
           <Route path="/" element={<Communities searchQuery={searchQuery} />} />
           <Route path="/community/:id" element={<CommunityDetail />} />
+          <Route path="/post/:id" element={<PostDetail />} />
           <Route path="/feed" element={<MyFeed />} />
           <Route path="/trending" element={<Trending />} />
         </Routes>

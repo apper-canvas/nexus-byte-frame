@@ -1,0 +1,137 @@
+[
+  {
+    "Id": 1,
+    "discussionId": 1,
+    "parentId": null,
+    "content": "Great points about hooks! I've been using custom hooks a lot more lately and they really help with code reusability.",
+    "author": "DevEnthusiast",
+    "timestamp": "2024-01-15T11:30:00Z",
+    "upvoteCount": 12
+  },
+  {
+    "Id": 2,
+    "discussionId": 1,
+    "parentId": 1,
+    "content": "Totally agree! What are some of your favorite custom hooks you've created?",
+    "author": "CodeNewbie",
+    "timestamp": "2024-01-15T12:15:00Z",
+    "upvoteCount": 3
+  },
+  {
+    "Id": 3,
+    "discussionId": 1,
+    "parentId": 1,
+    "content": "I've found useLocalStorage and useDebounce to be incredibly useful. The composition pattern is just so elegant.",
+    "author": "ReactMaster",
+    "timestamp": "2024-01-15T13:20:00Z",
+    "upvoteCount": 8
+  },
+  {
+    "Id": 4,
+    "discussionId": 1,
+    "parentId": null,
+    "content": "One thing to watch out for is the dependency array in useEffect. I see a lot of people forget to include all dependencies.",
+    "author": "ExperiencedDev",
+    "timestamp": "2024-01-15T14:00:00Z",
+    "upvoteCount": 15
+  },
+  {
+    "Id": 5,
+    "discussionId": 1,
+    "parentId": 4,
+    "content": "ESLint plugin for React hooks is a lifesaver for this!",
+    "author": "DevTools",
+    "timestamp": "2024-01-15T14:30:00Z",
+    "upvoteCount": 6
+  },
+  {
+    "Id": 6,
+    "discussionId": 2,
+    "parentId": null,
+    "content": "Performance optimization is crucial for large apps. Have you tried React.memo and useMemo?",
+    "author": "PerformanceGuru",
+    "timestamp": "2024-01-14T16:00:00Z",
+    "upvoteCount": 18
+  },
+  {
+    "Id": 7,
+    "discussionId": 2,
+    "parentId": 6,
+    "content": "Yes! But be careful not to over-optimize. Profiling first is always the best approach.",
+    "author": "DevExpert",
+    "timestamp": "2024-01-14T16:30:00Z",
+    "upvoteCount": 22
+  },
+  {
+    "Id": 8,
+    "discussionId": 2,
+    "parentId": 7,
+    "content": "Exactly! Premature optimization is the root of all evil. React DevTools Profiler is amazing for finding actual bottlenecks.",
+    "author": "OptimizationPro",
+    "timestamp": "2024-01-14T17:00:00Z",
+    "upvoteCount": 9
+  },
+  {
+    "Id": 9,
+    "discussionId": 3,
+    "parentId": null,
+    "content": "I've been using Zustand lately and loving it. Much simpler than Redux for most use cases.",
+    "author": "StateExpert",
+    "timestamp": "2024-01-13T10:00:00Z",
+    "upvoteCount": 25
+  },
+  {
+    "Id": 10,
+    "discussionId": 3,
+    "parentId": 9,
+    "content": "Zustand is great! But for complex apps with time travel debugging, Redux DevTools are still unmatched.",
+    "author": "ReduxFan",
+    "timestamp": "2024-01-13T10:30:00Z",
+    "upvoteCount": 14
+  },
+  {
+    "Id": 11,
+    "discussionId": 3,
+    "parentId": null,
+    "content": "Context API is often overlooked but perfect for theme and auth state. No need for external libraries for simple cases.",
+    "author": "ContextAdvocate",
+    "timestamp": "2024-01-13T11:00:00Z",
+    "upvoteCount": 11
+  },
+  {
+    "Id": 12,
+    "discussionId": 4,
+    "parentId": null,
+    "content": "Golden hour is magical! What camera settings do you typically use?",
+    "author": "PhotoLearner",
+    "timestamp": "2024-01-15T09:00:00Z",
+    "upvoteCount": 5
+  },
+  {
+    "Id": 13,
+    "discussionId": 4,
+    "parentId": 12,
+    "content": "I usually shoot in aperture priority, f/8-f/11, and underexpose slightly to preserve highlights.",
+    "author": "StreetShooter",
+    "timestamp": "2024-01-15T09:30:00Z",
+    "upvoteCount": 8
+  },
+  {
+    "Id": 14,
+    "discussionId": 5,
+    "parentId": null,
+    "content": "Love your shot of the city lights! What lens did you use?",
+    "author": "NightPhotographer",
+    "timestamp": "2024-01-14T23:00:00Z",
+    "upvoteCount": 7
+  },
+  {
+    "Id": 15,
+    "discussionId": 6,
+    "parentId": null,
+    "content": "The new patch is incredible! The character customization options are so detailed.",
+    "author": "BaldursGateFan",
+    "timestamp": "2024-01-15T17:00:00Z",
+    "upvoteCount": 23
+  }
+]

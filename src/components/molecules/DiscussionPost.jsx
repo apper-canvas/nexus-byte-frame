@@ -10,8 +10,7 @@ const DiscussionPost = ({
   onClick, 
   className 
 }) => {
-  const handleClick = () => {
-    toast.info("Discussion view coming soon! 🚀");
+const handleClick = () => {
     onClick?.(discussion);
   };
 

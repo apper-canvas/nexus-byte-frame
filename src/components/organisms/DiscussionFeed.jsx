@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import PostCreationForm from "@/components/organisms/PostCreationForm";
 import ApperIcon from "@/components/ApperIcon";
+import { useNavigate } from "react-router-dom";
 import DiscussionPost from "@/components/molecules/DiscussionPost";
 import Loading from "@/components/ui/Loading";
 import Error from "@/components/ui/Error";
@@ -18,6 +19,7 @@ const DiscussionFeed = ({
   onRetry,
   className 
 }) => {
+const navigate = useNavigate();
   const [showPostForm, setShowPostForm] = useState(false);
   const [creatingPost, setCreatingPost] = useState(false);
 
@@ -115,7 +117,7 @@ return (
           <motion.div key={discussion.Id} variants={itemVariants}>
             <DiscussionPost
               discussion={discussion}
-              onClick={onDiscussionClick}
+onClick={(discussion) => navigate(`/post/${discussion.Id}`)}
             />
           </motion.div>
         ))}

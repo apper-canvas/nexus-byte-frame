@@ -1,12 +1,12 @@
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import CommunityHeader from "@/components/organisms/CommunityHeader";
-import DiscussionFeed from "@/components/organisms/DiscussionFeed";
-import Loading from "@/components/ui/Loading";
-import Error from "@/components/ui/Error";
 import { useCommunity } from "@/hooks/useCommunities";
 import { useDiscussions } from "@/hooks/useDiscussions";
+import DiscussionFeed from "@/components/organisms/DiscussionFeed";
+import CommunityHeader from "@/components/organisms/CommunityHeader";
+import Loading from "@/components/ui/Loading";
+import Error from "@/components/ui/Error";
 
 const CommunityDetail = () => {
   const { id } = useParams();
@@ -21,7 +21,7 @@ const { community, loading: communityLoading, error: communityError, joinCommuni
         </div>
       </div>
     );
-  }
+}
 
   if (communityError) {
     return (
@@ -49,9 +49,8 @@ const { community, loading: communityLoading, error: communityError, joinCommuni
     navigate("/");
   };
 
-  const handleDiscussionClick = (discussion) => {
-    // Future implementation for discussion detail view
-    console.log("Discussion clicked:", discussion);
+const handleDiscussionClick = (discussion) => {
+    navigate(`/post/${discussion.Id}`);
   };
 
   return (

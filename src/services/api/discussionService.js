@@ -1,8 +1,11 @@
 import discussionsData from "@/services/mockData/discussions.json";
+import commentsData from "@/services/mockData/comments.json";
 
 class DiscussionService {
-  constructor() {
+constructor() {
     this.discussions = [...discussionsData];
+    this.comments = [...commentsData];
+    this.nextCommentId = Math.max(...this.comments.map(c => c.Id)) + 1;
   }
 
   async getAll() {
@@ -92,6 +95,89 @@ class DiscussionService {
       }, 200);
     });
   }
-}
+// Comment methods
+  async getComments(discussionId) {
+    await new Promise(resolve => setTimeout(resolve, 300));
+    
+    const discussionComments = this.comments
+      .filter(comment => comment.discussionId === discussionId && !comment.parentId)
+      .map(comment => ({
+        ...comment,
+        replies: this.getReplies(comment.Id)
+      }));
+    
+    return discussionComments;
+  }
 
+  getReplies(parentId) {
+    return this.comments
+      .filter(comment => comment.parentId === parentId)
+      .map(comment => ({
+        ...comment,
+        replies: this.getReplies(comment.Id)
+      }));
+  }
+
+  async addComment(discussionId, commentData) {
+    await new Promise(resolve => setTimeout(resolve, 500));
+    
+    const newComment = {
+      Id: this.nextCommentId++,
+      discussionId,
+      parentId: null,
+      content: commentData.content,
+      author: commentData.author,
+      timestamp: commentData.timestamp,
+      upvoteCount: commentData.upvoteCount || 0,
+      replies: []
+    };
+    
+    this.comments.unshift(newComment);
+    
+    // Update discussion comment count
+    const discussion = this.discussions.find(d => d.Id === discussionId);
+    if (discussion) {
+      discussion.commentCount++;
+    }
+    
+    return newComment;
+  }
+
+  async addReply(discussionId, parentId, replyData) {
+    await new Promise(resolve => setTimeout(resolve, 500));
+    
+    const newReply = {
+      Id: this.nextCommentId++,
+      discussionId,
+      parentId,
+      content: replyData.content,
+      author: replyData.author,
+      timestamp: replyData.timestamp,
+      upvoteCount: replyData.upvoteCount || 0,
+      replies: []
+    };
+    
+    this.comments.unshift(newReply);
+    
+    // Update discussion comment count
+    const discussion = this.discussions.find(d => d.Id === discussionId);
+    if (discussion) {
+      discussion.commentCount++;
+    }
+    
+    return newReply;
+  }
+
+  async upvoteComment(commentId) {
+    await new Promise(resolve => setTimeout(resolve, 200));
+    
+    const comment = this.comments.find(c => c.Id === commentId);
+    if (!comment) {
+      throw new Error('Comment not found');
+    }
+    
+    comment.upvoteCount++;
+    return comment;
+  }
+}
 export default new DiscussionService();

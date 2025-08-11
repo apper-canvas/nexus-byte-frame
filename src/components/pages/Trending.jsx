@@ -1,14 +1,20 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTrendingDiscussions } from "@/hooks/useDiscussions";
+import ApperIcon from "@/components/ApperIcon";
 import DiscussionPost from "@/components/molecules/DiscussionPost";
 import Loading from "@/components/ui/Loading";
 import Error from "@/components/ui/Error";
 import Empty from "@/components/ui/Empty";
-import ApperIcon from "@/components/ApperIcon";
-import { useTrendingDiscussions } from "@/hooks/useDiscussions";
 
-const Trending = () => {
+function Trending() {
+  const navigate = useNavigate();
   const { discussions, loading, error, loadTrendingDiscussions } = useTrendingDiscussions();
+
+const handleDiscussionClick = (discussion) => {
+    navigate(`/post/${discussion.Id}`);
+  };
 
   if (loading) {
     return (
@@ -47,11 +53,6 @@ const Trending = () => {
       </div>
     );
   }
-
-  const handleDiscussionClick = (discussion) => {
-    // Future implementation for discussion detail view
-    console.log("Discussion clicked:", discussion);
-  };
 
   return (
     <motion.div 
